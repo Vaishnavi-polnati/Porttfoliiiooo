@@ -52,7 +52,7 @@ export function About() {
             </dl>
           </div>
 
-          {/* Portrait through a glass lens. TODO: drop a real /public/portrait.jpg */}
+          {/* Portrait: drop public/portrait.jpg; gradient shows until it exists. */}
           <div ref={portraitRef} data-reveal className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
               <div
@@ -60,7 +60,7 @@ export function About() {
                 className="absolute inset-0 scale-110"
                 style={{
                   background:
-                    "radial-gradient(120% 120% at 30% 20%, #6E8BFF, transparent 55%), radial-gradient(120% 120% at 80% 90%, #FF8FB1, transparent 55%), #14141A",
+                    "url(/portrait.jpg) center / cover no-repeat, radial-gradient(120% 120% at 30% 20%, #6E8BFF, transparent 55%), radial-gradient(120% 120% at 80% 90%, #FF8FB1, transparent 55%), #14141A",
                 }}
               />
               <div className="glass absolute inset-0 flex items-end p-6">

@@ -58,10 +58,13 @@ export default function Scene() {
       <color attach="background" args={["#F4F2EC"]} />
       <Suspense fallback={null}>
         <Rig />
-        <LiquidBlob detail={isMobile ? 24 : 64} />
+        {/* Smaller + shifted right on desktop so the hero name reads clean. */}
+        <group position={[isMobile ? 0 : 1.0, isMobile ? 0.2 : 0, 0]} scale={isMobile ? 0.72 : 0.62}>
+          <LiquidBlob detail={isMobile ? 24 : 64} />
+        </group>
         <EffectComposer multisampling={isMobile ? 0 : 4}>
           <Bloom
-            intensity={0.7}
+            intensity={0.45}
             luminanceThreshold={0.35}
             luminanceSmoothing={0.5}
             mipmapBlur

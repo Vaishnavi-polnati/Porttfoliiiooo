@@ -21,8 +21,8 @@ export function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40">
-      <nav className="section-shell flex items-center justify-between py-5" aria-label="Primary">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-ink/5 bg-cream/70 backdrop-blur-md">
+      <nav className="section-shell flex items-center justify-between py-3.5" aria-label="Primary">
         <a href="#hero" className="font-display text-fluid-base font-semibold tracking-tight">
           PV<span className="text-iris-a">.</span>
         </a>
@@ -53,7 +53,7 @@ export function Nav() {
       </nav>
 
       {open && (
-        <div className="glass mx-4 rounded-2xl p-6 md:hidden">
+        <div className="glass mx-4 mb-4 rounded-2xl p-6 md:hidden">
           <ul className="flex flex-col gap-3">
             {sections.slice(1).map((s) => (
               <li key={s.id}>

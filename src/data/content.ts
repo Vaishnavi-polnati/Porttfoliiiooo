@@ -74,8 +74,9 @@ export type Project = {
   blurb: string;
   description: string;
   tags: string[];
-  // hue rotates the placeholder gradient thumbnail; swap for real imagery later
+  // hue tints the fallback gradient when no image is set
   hue: number;
+  image?: string;
   href?: string;
 };
 export const projects: Project[] = [
@@ -89,6 +90,7 @@ export const projects: Project[] = [
       "A full-stack MERN interview prep platform with secure authentication. Integrates the Gemini API to generate dynamic interview questions and structured feedback, backed by RESTful APIs that handle concurrent interview requests and persist user history.",
     tags: ["React", "Node.js", "Express", "MongoDB", "Gemini API"],
     hue: 230,
+    image: "/projects/prepwire.svg",
   },
   {
     id: "finguard",
@@ -100,6 +102,7 @@ export const projects: Project[] = [
       "Fraud detection on the IEEE-CIS dataset with chronological splits, feature engineering, and a 3-seed LightGBM ensemble reaching 0.669 Average Precision, 0.928 ROC-AUC and 0.646 F1 on held-out data. SHAP gives per-transaction explanations, served through a FastAPI + React.js dashboard for batch predictions and risk prioritization.",
     tags: ["Python", "LightGBM", "SHAP", "FastAPI", "React.js"],
     hue: 160,
+    image: "/projects/finguard.svg",
   },
   {
     id: "productlaunch",
@@ -111,6 +114,7 @@ export const projects: Project[] = [
       "A generative AI application that creates marketing visuals for financial products from campaign briefs and product requirements — producing varied visuals for different customer segments and reducing dependence on photoshoots and manual design.",
     tags: ["Generative AI", "Diffusion Models"],
     hue: 320,
+    image: "/projects/productlaunch.svg",
   },
 ];
 

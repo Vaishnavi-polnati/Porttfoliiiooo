@@ -5,7 +5,8 @@ import { projects, type Project } from "../data/content";
 import { gsap } from "../lib/gsap";
 import { prefersReducedMotion } from "../lib/useReducedMotion";
 
-function thumbStyle(hue: number) {
+function thumbStyle({ hue, image }: Project) {
+  if (image) return { background: `#14141A url(${image}) center / cover no-repeat` } as const;
   return {
     background: `radial-gradient(120% 120% at 25% 20%, hsl(${hue} 90% 70%), transparent 55%), radial-gradient(120% 120% at 80% 90%, hsl(${
       hue + 40
@@ -76,7 +77,7 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: (p: Projec
           layoutId={`thumb-${project.id}`}
           ref={thumbRef}
           className="absolute inset-0"
-          style={{ ...thumbStyle(project.hue), filter: `url(#${filterId})` }}
+          style={{ ...thumbStyle(project), filter: `url(#${filterId})` }}
         />
         <div className="absolute inset-0 flex items-end justify-between p-5">
           <span className="font-sans text-fluid-sm uppercase tracking-[0.2em] text-cream/90">
@@ -128,7 +129,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         layoutId={`thumb-${project.id}`}
         className="glass relative z-10 max-h-[88vh] w-full max-w-3xl overflow-y-auto rounded-[2rem] p-0"
       >
-        <div className="relative aspect-[16/9] w-full" style={thumbStyle(project.hue)}>
+        <div className="relative aspect-[16/9] w-full" style={thumbStyle(project)}>
           <button
             ref={closeRef}
             onClick={onClose}

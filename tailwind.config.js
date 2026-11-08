@@ -14,16 +14,16 @@ export default {
         mint: "#8FF0C8",
       },
       fontFamily: {
-        display: ['"Fraunces"', "serif"],
-        sans: ['"Space Grotesk"', "system-ui", "sans-serif"],
+        display: ['"Inter Tight"', "system-ui", "sans-serif"],
+        sans: ['"Inter"', "system-ui", "sans-serif"],
       },
       fontSize: {
         "fluid-sm": "clamp(0.85rem, 0.8rem + 0.25vw, 1rem)",
-        "fluid-base": "clamp(1rem, 0.92rem + 0.4vw, 1.25rem)",
-        "fluid-lg": "clamp(1.4rem, 1.1rem + 1.4vw, 2.2rem)",
-        "fluid-xl": "clamp(2.2rem, 1.4rem + 3.8vw, 4.5rem)",
-        "fluid-2xl": "clamp(3rem, 1rem + 9vw, 9rem)",
-        "fluid-3xl": "clamp(3.5rem, 0.5rem + 13vw, 13rem)",
+        "fluid-base": "clamp(1rem, 0.92rem + 0.4vw, 1.2rem)",
+        "fluid-lg": "clamp(1.25rem, 1rem + 1.2vw, 1.9rem)",
+        "fluid-xl": "clamp(1.9rem, 1.2rem + 3.2vw, 3.8rem)",
+        "fluid-2xl": "clamp(2.6rem, 0.85rem + 7.6vw, 7.6rem)",
+        "fluid-3xl": "clamp(3rem, 0.4rem + 11vw, 11rem)",
       },
       backgroundImage: {
         iris: "linear-gradient(120deg, #6E8BFF 0%, #FF8FB1 100%)",

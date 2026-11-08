@@ -24,7 +24,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col justify-center"
+      className="relative flex min-h-[100svh] flex-col justify-center pt-24"
       aria-label="Introduction"
     >
       <div className="section-shell">
@@ -37,23 +37,16 @@ export function Hero() {
         <h1 className="font-display font-semibold leading-[0.86] tracking-tight">
           <KineticText
             as="span"
-            text="Polnati"
+            text="Vaishnavi"
             delay={0.15}
-            className="block text-fluid-3xl pr-[0.18em]"
+            className="block text-[clamp(2.75rem,1rem+6vw,6.5rem)] pr-[0.25em]"
             ariaLabel={identity.name}
           />
           <KineticText
             as="span"
-            text="Sri Satya"
-            delay={0.25}
-            className="block text-fluid-3xl text-iris-a"
-            ariaLabel=""
-          />
-          <KineticText
-            as="span"
-            text="Vaishnavi"
-            delay={0.35}
-            className="block text-fluid-3xl text-iris-a"
+            text="Polnati"
+            delay={0.3}
+            className="block text-[clamp(2.75rem,1rem+6vw,6.5rem)] text-iris-a"
             ariaLabel=""
           />
         </h1>
