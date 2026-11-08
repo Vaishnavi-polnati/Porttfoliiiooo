@@ -8,11 +8,12 @@ export default defineConfig({
     target: "es2020",
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Keep the heavy 3D stack out of the initial bundle path.
-          three: ["three"],
-          r3f: ["@react-three/fiber", "@react-three/drei", "@react-three/postprocessing"],
-          motion: ["gsap", "@gsap/react", "framer-motion", "lenis"],
+        // Keep the heavy 3D stack out of the initial bundle path (Vite 8 needs a function).
+        manualChunks(id: string) {
+          if (!id.includes("node_modules")) return;
+          if (/[\\/]node_modules[\\/]three[\\/]/.test(id)) return "three";
+          if (id.includes("@react-three")) return "r3f";
+          if (/[\\/]node_modules[\\/](gsap|@gsap|framer-motion|lenis)[\\/]/.test(id)) return "motion";
         },
       },
     },

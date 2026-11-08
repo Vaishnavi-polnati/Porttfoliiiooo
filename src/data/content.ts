@@ -1,57 +1,51 @@
-/**
- * SINGLE SOURCE OF CONTENT.
- * Everything here is placeholder — swap in real details and delete the TODO
- * markers. Identity (name / role) is real per the brief; the rest is sample
- * data sized to look right so you can replace it 1:1.
- */
+/** SINGLE SOURCE OF CONTENT — sourced from resume. */
 
 export const identity = {
-  name: "Abhinav Teja",
-  role: "Creative AI Engineer",
-  tagline: ["Immersive", "Interactive", "Cinematic"],
-  // TODO: replace with your real one-liner
+  name: "Polnati Sri Satya Vaishnavi",
+  role: "Full-Stack & AI Developer",
+  tagline: ["Full-Stack", "AI / ML", "Problem Solver"],
   blurb:
-    "I build intelligent systems that feel alive — blending generative AI, real-time graphics, and human-centred design into experiences people remember.",
-  // TODO: replace with real links
-  email: "hello@abhinavteja.dev",
+    "CSE undergrad at SRM University AP building full-stack web apps and explainable AI systems — from MERN platforms to fraud-detection models people can actually trust.",
+  email: "vaishnavipolnati6@gmail.com",
   socials: [
-    { label: "GitHub", href: "https://github.com/" }, // TODO
-    { label: "LinkedIn", href: "https://linkedin.com/in/" }, // TODO
-    { label: "X", href: "https://x.com/" }, // TODO
-    { label: "Read.cv", href: "https://read.cv/" }, // TODO
+    { label: "GitHub", href: "https://github.com/Vaishnavi-polnati" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/vaishnavi-polnati" },
   ],
 };
 
 export const about = {
-  // TODO: rewrite in your own voice
   paragraphs: [
-    "I'm a Creative AI Engineer working at the seam between machine intelligence and motion design.",
-    "My work turns models into mediums — diffusion, agents, and real-time inference woven into interfaces that respond, breathe, and surprise.",
-    "I care about the craft most people scroll past: the easing curve, the first 200ms, the frame that makes someone stop.",
+    "I'm a Computer Science undergraduate at SRM University AP who enjoys turning ideas into working, full-stack products.",
+    "As an SDE intern at Betterswitch I built the company's primary website with React.js and Node.js and contributed to a Hospital Management System used in real healthcare workflows.",
+    "On the AI side, I build things like Prepwire, a Gemini-powered interview prep platform, and FinGuard AI, an explainable fraud-detection system with LightGBM and SHAP.",
   ],
   facts: [
-    { k: "Based in", v: "Hyderabad, IN" }, // TODO
-    { k: "Focus", v: "Generative AI · Real-time WebGL" },
-    { k: "Years", v: "5+" }, // TODO
-    { k: "Status", v: "Open to select work" }, // TODO
+    { k: "Based in", v: "Andhra Pradesh, IN" },
+    { k: "Focus", v: "Full-Stack · AI / ML" },
+    { k: "Education", v: "B.Tech CSE · CGPA 8.0" },
+    { k: "Status", v: "Open to internships & roles" },
   ],
 };
 
 export type Skill = { name: string; level: number; group: string };
+// shortcut: levels are self-estimates (resume lists no proficiency), tune as needed
 export const skills: Skill[] = [
-  // TODO: tune to your real stack
-  { name: "PyTorch", level: 0.92, group: "AI/ML" },
-  { name: "Diffusion", level: 0.88, group: "AI/ML" },
-  { name: "LLM Agents", level: 0.9, group: "AI/ML" },
-  { name: "TensorRT", level: 0.78, group: "AI/ML" },
-  { name: "Three.js / R3F", level: 0.9, group: "Graphics" },
-  { name: "GLSL", level: 0.82, group: "Graphics" },
-  { name: "GSAP", level: 0.86, group: "Motion" },
-  { name: "WebGPU", level: 0.7, group: "Graphics" },
-  { name: "React / TS", level: 0.93, group: "Engineering" },
-  { name: "Python", level: 0.94, group: "Engineering" },
-  { name: "Rust", level: 0.64, group: "Engineering" },
-  { name: "Design Systems", level: 0.8, group: "Craft" },
+  { name: "Java", level: 0.85, group: "Languages" },
+  { name: "Python", level: 0.85, group: "Languages" },
+  { name: "JavaScript", level: 0.85, group: "Languages" },
+  { name: "HTML / CSS", level: 0.88, group: "Languages" },
+  { name: "React.js", level: 0.85, group: "Frameworks" },
+  { name: "Node.js", level: 0.8, group: "Frameworks" },
+  { name: "Machine Learning", level: 0.75, group: "AI/ML" },
+  { name: "Gen AI", level: 0.6, group: "AI/ML" },
+  { name: "MySQL / SQL", level: 0.8, group: "Databases" },
+  { name: "PostgreSQL", level: 0.7, group: "Databases" },
+  { name: "MongoDB", level: 0.82, group: "Databases" },
+  { name: "DSA & OOP", level: 0.82, group: "CS Core" },
+  { name: "OS & DBMS", level: 0.75, group: "CS Core" },
+  { name: "REST APIs", level: 0.8, group: "CS Core" },
+  { name: "AWS", level: 0.7, group: "Tools" },
+  { name: "Git / GitHub", level: 0.85, group: "Tools" },
 ];
 
 export type Experience = {
@@ -62,30 +56,13 @@ export type Experience = {
   tags: string[];
 };
 export const experience: Experience[] = [
-  // TODO: replace all roles with your real history
   {
-    role: "Creative AI Engineer",
-    org: "Vaultera",
-    period: "2024 — Now",
+    role: "Software Development Engineer Intern",
+    org: "Betterswitch · Vijayawada",
+    period: "May — Jul 2026",
     summary:
-      "Lead generative + real-time experiences: agentic pipelines, on-device inference, and WebGL product surfaces.",
-    tags: ["LLM Agents", "WebGL", "Product"],
-  },
-  {
-    role: "ML Engineer",
-    org: "Studio Placeholder",
-    period: "2022 — 2024",
-    summary:
-      "Shipped diffusion-based tooling and trained custom models for interactive media installations.",
-    tags: ["Diffusion", "PyTorch", "Installations"],
-  },
-  {
-    role: "Creative Technologist",
-    org: "Agency Placeholder",
-    period: "2020 — 2022",
-    summary:
-      "Built award-adjacent campaign sites with shader-driven interaction and scroll choreography.",
-    tags: ["Three.js", "GSAP", "Campaigns"],
+      "Built the company's primary website with React.js and Node.js, shipped responsive reusable UI components from design requirements, and contributed features to a Hospital Management System.",
+    tags: ["React.js", "Node.js", "UI Components", "Healthcare"],
   },
 ];
 
@@ -102,50 +79,38 @@ export type Project = {
   href?: string;
 };
 export const projects: Project[] = [
-  // TODO: replace with your real case studies + imagery
   {
-    id: "neura",
-    title: "Neura Field",
-    year: "2025",
-    role: "Lead Engineer",
-    blurb: "Real-time generative particle instrument driven by audio + agents.",
+    id: "prepwire",
+    title: "Prepwire",
+    year: "2026",
+    role: "Full-Stack Developer",
+    blurb: "AI-powered interview preparation platform.",
     description:
-      "A live AV instrument where an LLM agent conducts a GPU particle field reacting to audio features. Built with WebGPU compute, custom GLSL, and a streaming inference loop.",
-    tags: ["WebGPU", "Agents", "GLSL", "Audio"],
+      "A full-stack MERN interview prep platform with secure authentication. Integrates the Gemini API to generate dynamic interview questions and structured feedback, backed by RESTful APIs that handle concurrent interview requests and persist user history.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Gemini API"],
     hue: 230,
   },
   {
-    id: "diffuse",
-    title: "Diffuse Studio",
-    year: "2024",
-    role: "Creator",
-    blurb: "Browser-native diffusion canvas with sub-second latency.",
+    id: "finguard",
+    title: "FinGuard AI",
+    year: "2026",
+    role: "ML Engineer",
+    blurb: "Explainable transaction fraud detection.",
     description:
-      "An in-browser image studio running a distilled diffusion model via WebGPU, with a node-based prompt graph and shader post-processing.",
-    tags: ["Diffusion", "WebGPU", "React"],
-    hue: 320,
-  },
-  {
-    id: "atlas",
-    title: "Atlas Agents",
-    year: "2024",
-    role: "Architect",
-    blurb: "Multi-agent research OS with a spatial, cinematic UI.",
-    description:
-      "A multi-agent orchestration platform visualised as an explorable 3D knowledge space — agents, tools, and memory rendered as a living graph.",
-    tags: ["LLM Agents", "Three.js", "Graph"],
+      "Fraud detection on the IEEE-CIS dataset with chronological splits, feature engineering, and a 3-seed LightGBM ensemble reaching 0.669 Average Precision, 0.928 ROC-AUC and 0.646 F1 on held-out data. SHAP gives per-transaction explanations, served through a FastAPI + React.js dashboard for batch predictions and risk prioritization.",
+    tags: ["Python", "LightGBM", "SHAP", "FastAPI", "React.js"],
     hue: 160,
   },
   {
-    id: "mirror",
-    title: "Mirror Stage",
-    year: "2023",
-    role: "Creative Tech",
-    blurb: "Installation: a portrait that reacts to how you move.",
+    id: "productlaunch",
+    title: "ProductLaunch AI",
+    year: "2026",
+    role: "Ongoing",
+    blurb: "Generative marketing visuals for financial products.",
     description:
-      "A camera-driven installation using pose estimation to drive a fluid shader portrait — your motion ripples through a liquid reflection in real time.",
-    tags: ["Pose", "GLSL", "Installation"],
-    hue: 20,
+      "A generative AI application that creates marketing visuals for financial products from campaign briefs and product requirements — producing varied visuals for different customer segments and reducing dependence on photoshoots and manual design.",
+    tags: ["Generative AI", "Diffusion Models"],
+    hue: 320,
   },
 ];
 
@@ -156,13 +121,11 @@ export type Certificate = {
   hue: number;
 };
 export const certificates: Certificate[] = [
-  // TODO: replace with real certs + scans (lightbox swaps to real images)
-  { title: "Deep Learning Specialization", issuer: "DeepLearning.AI", year: "2023", hue: 230 },
-  { title: "GPU Programming", issuer: "NVIDIA DLI", year: "2023", hue: 150 },
-  { title: "Real-Time Graphics", issuer: "Placeholder Inst.", year: "2022", hue: 320 },
-  { title: "Generative AI Engineering", issuer: "Placeholder Org", year: "2024", hue: 280 },
-  { title: "Creative Coding", issuer: "Placeholder", year: "2021", hue: 40 },
-  { title: "WebGPU Fundamentals", issuer: "Placeholder", year: "2024", hue: 190 },
+  { title: "MongoDB Associate Developer", issuer: "MongoDB", year: "2026", hue: 150 },
+  { title: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "2026", hue: 30 },
+  { title: "Web & Mobile UI/UX Design (Figma)", issuer: "Udemy", year: "Course", hue: 280 },
+  { title: "Genesis Track Winner", issuer: "IEEE", year: "Achievement", hue: 230 },
+  { title: "Documentation Head", issuer: "IEEE Student Community, SRM AP", year: "Leadership", hue: 190 },
 ];
 
 export type Academic = {
@@ -172,18 +135,23 @@ export type Academic = {
   detail: string;
 };
 export const academics: Academic[] = [
-  // TODO: replace with real education
   {
-    degree: "M.S. — Artificial Intelligence",
-    school: "Placeholder University",
-    period: "2020 — 2022",
-    detail: "Thesis on real-time generative systems and human–AI interaction.",
+    degree: "B.Tech — Computer Science & Engineering",
+    school: "SRM University AP",
+    period: "2024 — 2028",
+    detail: "CGPA: 8.0 · Andhra Pradesh, India",
   },
   {
-    degree: "B.Tech — Computer Science",
-    school: "Placeholder Institute of Technology",
-    period: "2016 — 2020",
-    detail: "Graphics, ML, and a lot of side-project shaders.",
+    degree: "Class XII — MPC",
+    school: "Sri Chaitanya Junior College",
+    period: "2022 — 2024",
+    detail: "79.7% · Hyderabad, India",
+  },
+  {
+    degree: "Class X — CBSE",
+    school: "Sree Vidhyanikethan International School",
+    period: "2022",
+    detail: "75% · Hyderabad, India",
   },
 ];
 

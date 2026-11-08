@@ -65,8 +65,7 @@ export function About() {
               />
               <div className="glass absolute inset-0 flex items-end p-6">
                 <span className="font-sans text-fluid-sm uppercase tracking-[0.25em] text-ink">
-                  {/* TODO: replace placeholder portrait */}
-                  Portrait — TODO
+                  Vaishnavi · SRM University AP
                 </span>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import { identity } from "../data/content";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "../lib/gsap";
 import { appState } from "../lib/store";
@@ -76,7 +77,7 @@ export function Preloader({ onDone }: { onDone: () => void }) {
           <div ref={fillRef} className="h-full w-full origin-left scale-x-0 bg-iris" />
         </div>
         <p className="mt-6 font-sans text-fluid-sm uppercase tracking-[0.3em] text-ink-soft">
-          Abhinav Teja
+          {identity.name}
         </p>
       </div>
     </div>

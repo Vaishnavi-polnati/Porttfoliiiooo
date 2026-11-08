@@ -24,7 +24,7 @@ export function Nav() {
     <header className="fixed inset-x-0 top-0 z-40">
       <nav className="section-shell flex items-center justify-between py-5" aria-label="Primary">
         <a href="#hero" className="font-display text-fluid-base font-semibold tracking-tight">
-          AT<span className="text-iris-a">.</span>
+          PV<span className="text-iris-a">.</span>
         </a>
 
         <div className="hidden items-center gap-7 md:flex">

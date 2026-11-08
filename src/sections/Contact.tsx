@@ -138,12 +138,12 @@ export function Contact() {
       </div>
 
       <footer className="section-shell mt-28 flex flex-col items-center gap-2 border-t border-ink/10 pt-10 text-center">
-        <span className="font-display text-fluid-lg text-iris">Abhinav Teja</span>
+        <span className="font-display text-fluid-lg text-iris">{identity.name}</span>
         <span className="font-sans text-fluid-sm text-ink-soft">
-          Creative AI Engineer · Immersive · Interactive · Cinematic
+          {identity.role} · {identity.tagline.join(" · ")}
         </span>
         <span className="mt-2 font-sans text-fluid-sm text-ink-soft">
-          {/* TODO: update year/credits */}© {new Date().getFullYear()} — Built with React, R3F & GSAP
+          © {new Date().getFullYear()} — Built with React, R3F & GSAP
         </span>
       </footer>
     </section>

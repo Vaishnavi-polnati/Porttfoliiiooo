@@ -30,21 +30,28 @@ export function Hero() {
       <div className="section-shell">
         <p className="mb-6 flex items-center gap-3 font-sans text-fluid-sm uppercase tracking-[0.3em] text-ink-soft">
           <span className="h-px w-10 bg-iris" />
-          Creative AI Engineer
+          {identity.role}
         </p>
 
         {/* Kinetic name — the hero typographic moment */}
         <h1 className="font-display font-semibold leading-[0.86] tracking-tight">
           <KineticText
             as="span"
-            text="Abhinav"
+            text="Polnati"
             delay={0.15}
             className="block text-fluid-3xl pr-[0.18em]"
-            ariaLabel="Abhinav Teja"
+            ariaLabel={identity.name}
           />
           <KineticText
             as="span"
-            text="Teja"
+            text="Sri Satya"
+            delay={0.25}
+            className="block text-fluid-3xl text-iris-a"
+            ariaLabel=""
+          />
+          <KineticText
+            as="span"
+            text="Vaishnavi"
             delay={0.35}
             className="block text-fluid-3xl text-iris-a"
             ariaLabel=""
@@ -61,7 +68,6 @@ export function Hero() {
         </div>
 
         <p className="mt-8 max-w-md font-sans text-fluid-base text-ink-soft">
-          {/* TODO: refine hero blurb */}
           {identity.blurb}
         </p>
       </div>
